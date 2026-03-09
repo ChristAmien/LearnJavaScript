@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(215, 217, 218);
+}
+
+.todo-container,.todo-tab{
+    text-align: center;
+    border: 1px solid rgb(102, 101, 101);
+    width: 700px;
+    min-height: 200px;
+    border-radius: 12px;
+    margin: 100px auto;
+    background-color: white;
+    box-shadow: 10px 20px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+.logo_amien{
+    margin: 20px auto;
+    height: 80px;
+    width: 80px;
+    display: block;
+}
+
+.todo-title{
+    margin-bottom: 15px;
+}
+
+.todo-input-section{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap
+}
+
+.todo-input{
+    padding: 8px;
+    width: 60%;
+
+    border-radius: 12px;
+}
+
+.todo-add-btn{
+    padding: 8px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 20%;
+    transition: 0.3s ease;
+}
+
+
+
+.todo-add-btn:hover{
+    color: white;
+
+    background-color: rgb(45, 153, 230);
+}
+
+.todo-list{
+    padding-top: 8px 15px;
+    list-style-type: none;
+    border-radius: 12px;
+    margin: 30px;
+}
+
+.liste-item{
+    display: flex;
+    justify-content: space-between; /* texte à gauche, bouton à droite */
+    align-items: center;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    list-style: none;
+}
+
+
+.delete-btn{
+    padding: 8px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 20%;
+    margin-left: 52px;
+    transition: 0.3s ease;
+}
+
+.delete-btn:hover{
+    color: white;
+    background-color: red;
+}
+
+.error-msg{
+  color: red;
+  margin-top: 8px;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
